@@ -1,0 +1,463 @@
+html, body {
+    width:100%;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    min-height: 100%;
+    margin-bottom: 1px;
+}
+body {
+    font-family: tahoma;
+    color: #C00C0C;
+    font-size:1em;
+    background-color: #220202;
+    SCROLLBAR-BASE-COLOR: #C00C0C;
+    SCROLLBAR-ARROW-COLOR: black;
+    text-align: center;
+}
+img { border-style:none; }
+p { text-align:left; }
+
+#container {
+    position:relative;
+    width:998px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:294px;
+}
+
+#menu {
+    width:156px;
+    background-image:url(img/menubg.jpg);
+    background-repeat:repeat-y;
+    background-position:left;
+}
+
+#menu a{
+    text-align:left;
+    display:block;
+    width:145px;
+    height:30px;
+    margin-left:6px;
+    background-image:url(img/buttonmenu.gif);
+    background-repeat:no-repeat; /*damned Firefox*/
+    padding-left:30px;
+    line-height:30px;
+    font-size:0.8em;
+    font-family: tahoma;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#menu a:hover{
+    text-decoration: underline;
+}
+
+#menu a.newmessage {
+    background-image:url(img/buttonmenu_newmessage.gif);
+}
+
+.side_more {
+    text-align:left;
+    margin-left:8px;
+    margin-right:8px;
+    background-image:url(img/darkstone.jpg);
+    border-width:1px;
+    border-style:inset;
+    border-color:#000000;
+    padding:4px;
+    text-align:center;
+}
+
+.side_more a:link{
+    display:block;
+    margin-bottom:5px;
+    font-family: tahoma;
+    text-decoration: none;
+    font-size: 0.7em;
+    color: #C00C0C;
+    font-weight: bold;
+}
+
+.side_more a:hover{
+    text-decoration: underline;
+}
+
+#copyright {
+    /* container */
+    position:absolute;
+    width:800px;
+    bottom:14px;
+    right:30px;
+    /* content */
+    font-family: tahoma;
+    color: #C00C0C;
+    font-size: 0.7em;
+}
+
+#copyright a {
+    text-decoration: none;
+    color: #C00C0C;
+    font-weight: bold;
+}
+
+#copyright a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/*---------------- Contentstrukturierung --------------- */
+
+/* ?bersicht */
+
+#raceimg {
+    float:left;
+}
+#charstats {
+    width:200px;
+}
+#globalmessage {
+    width:700px;
+    color: orangered;
+    font-size: 0.8em;
+}
+#keyinfo {
+    width:520px;
+}
+#bitelink {
+    width:520px;
+}
+#skills {
+    width: 400px;
+    float:left;
+}
+#stats {
+    width: 300px;
+    float:right;
+}
+#items {
+    clear:both;
+}
+
+/* msg */
+#msg {
+    text-align:center;
+}
+
+
+
+
+/* -------------------- Contentspezifisch --------- */
+
+
+#content {
+    position:relative;
+    top: -30px;
+    width:720px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+}
+
+#content a {
+    text-decoration: none;
+    font-family: verdana, arial, sans-serif;
+    font-weight: bold;
+    color: #F00C0C;
+}
+
+#content a:hover {
+    text-decoration: underline;
+    font-family: verdana;
+}
+
+#content .blocklink {
+    display:block;
+    width:100%;
+    text-decoration: none;
+    margin-bottom:2px;
+    background-color: #2f0108;
+}
+
+#content .blocklink:hover {
+    text-decoration: none;
+    background-color: #551100;
+}
+
+#upgrademsg {
+    text-align: center;
+}
+
+
+#content p {
+    margin-top:0px;
+    margin-bottom:20px;
+}
+
+#content div {
+    margin-bottom: 20px;
+    text-align:center;
+}
+
+#content div p {
+    margin-top:0px;
+    margin-bottom:2px;
+    background-color:#2f0108;
+}
+
+.buttonlink {
+    display:block;
+    width:151px;
+    height:43px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+    background-image:url('img/button.gif');
+    line-height:43px;
+}
+
+/* --- Tables --- */
+
+#charstats td, #training td, #train_skills td, #keyinfo td, #skills td, #stats td, #items td, #settings td {
+    background-color: #2f0108;
+}
+
+#content td.active {
+    background-color: #551100;
+}
+
+#content td.activetemp {
+    background-color: #100;
+}
+
+/* --- Headings --- */
+
+h1 {
+    width:100%;
+    padding-left:0px;
+    margin-top:0px;
+    margin-bottom:14px;
+    font-family: tahoma;
+    color: #C00C0C;
+    font-size:1em;
+    font-weight: normal;
+    line-height: 27px;
+    text-decoration: underline;
+    text-align:left;
+}
+
+h2 {
+    width:100%;
+    padding-left:0px;
+    font-family: tahoma;
+    color: #C00C0C;
+    font-size:1em;
+    font-weight: normal;
+    line-height: 27px;
+    background-image: url('img/tdh.jpg');
+    margin-bottom:2px;
+    margin-top:0px;
+}
+
+h3 {
+    width:100%;
+    font-family: tahoma;
+    color: #660000;
+    font-size:1.4em;
+    font-weight: bold;
+    margin-top:0px;
+    margin-bottom:30px;
+}
+
+.tdi {
+    margin-top:0px;
+    margin-bottom:2px;
+    padding:4px;
+    background-color: #331100;
+    text-align: center;
+    font-size: 0.6em;
+    font-weight:bold;
+}
+
+.tdnp {
+    text-align:left;
+    margin-top:0px;
+    margin-bottom:2px;
+    background-color: #331100;
+}
+
+.fontsmall {
+    font-size: 0.7em;
+}
+
+.fontsmall2 {
+    font-size: 0.8em;
+}
+
+.tdh {
+    background-image: url('img/tdh.jpg');
+}
+
+.tdn {
+    background-color: #331100;
+}
+.ainfo4 {
+    border:1px solid #FFC105;
+    padding: 10px 10px;
+    background-color:#FFE085;
+    color:#000;
+}
+.tdna {
+    background-color: #551100;
+}
+
+select, input,textarea {
+    margin: 4px;
+    font-size: 10pt;
+    background-color: #220202;
+    color: #C00C0C;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #887766;
+}
+
+input:disabled {
+    background-color: #503232;
+    color: #c65757;
+}
+
+a.copyright {
+    text-decoration: none;
+    font-family: tahoma;
+    font-size: 8pt;
+    color: #C00C0C;
+    font-weight: bold;
+}
+a.headlines {
+    text-decoration: none;
+    font-family: tahoma;
+    font-size: 12pt;
+    color: #C00C0C;
+    font-weight: bold;
+}
+a:visited.headlines {
+    text-decoration: none;
+    font-family: tahoma;
+    font-size: 12pt;
+    color: #C00C0C;
+    font-weight: bold;
+}
+a:link.headlines {
+    text-decoration: none;
+    font-family: tahoma;
+    font-size: 12pt;
+    color: #C00C0C;
+    font-weight: bold;
+}
+a:hover.headlines {
+    text-decoration: underline;
+    font-family: tahoma;
+    font-size: 12pt;
+    color: #C00C0C;
+    font-weight: bold;
+}
+.rbg {
+    background-color:#2F0108;
+}
+
+
+/* INICIO DO UPDATE 1.03 */
+
+h4 {
+    width:100%;
+    padding-left:0px;
+    font-family: tahoma;
+    color: #C00C0C;
+    font-size:1em;
+    font-weight: normal;
+    line-height: 27px;
+    background-image: url('img/wrap/wrap-center.jpg');
+    margin-bottom:2px;
+    margin-top:0px;
+}
+
+.wrap-bottom-right,
+.wrap-bottom-left,
+.wrap-top-right,
+.wrap-top-left {
+    background:url(img/wrap/wrap-top-left.gif) no-repeat;
+    height:5px;
+    padding:0 0 0 5px;
+    line-height:0;
+    font-size:0;
+}
+.wrap-top-right { background:url(img/wrap/wrap-top-right.gif) no-repeat scroll right 0; padding:0 5px 0 0; }
+.wrap-top-middle { background:url(img/wrap/wrap-top-middle.gif) repeat-x; height:5px;}
+.wrap-bottom-left {background:url(img/wrap/wrap-bottom-left.gif) no-repeat; padding:0 0 0 5px;}
+.wrap-bottom-right {background:url(img/wrap/wrap-bottom-right.gif) no-repeat scroll right 0; padding:0 5px 0 0;}
+.wrap-bottom-middle {background:url(img/wrap/wrap-bottom-middle.gif) repeat-x scroll 0 bottom; height:5px;}
+.wrap-left {background:url(img/wrap/wrap-left.gif) repeat-y scroll 0 0; padding-left:5px;}
+.wrap-right {
+    background:url(img/wrap/wrap-right.gif) repeat-y scroll right 0;
+    background-color:rgba(0,0,0, 0.5);
+    padding-right:5px;
+}
+* +html .wrap-right {background-color:#140407;}
+* html .wrap-right {background-color:#140407;}
+
+.table-wrap {width:100%; overflow:hidden;}
+
+#header {
+    background:url(img/wrap/header-bg.gif) no-repeat;
+    height:119px;
+    margin:0 auto;
+    position:relative;
+    width:1014px;
+    z-index:100;
+}
+
+
+/* Styles for PHP 5.0/older browser compatibility */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modal {
+  display: block; 
+}
+
+/* Bootstrap 2 CSS for styling */ 
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css');
